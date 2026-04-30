@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Images: Nature Theme</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+            transform: translateY(-5px);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .filter1 { filter: sepia(0.4) brightness(1.05) contrast(1.1); }
+        .filter2 { filter: contrast(1.25) brightness(0.98) saturate(1.05); }
+        .filter3 { filter: saturate(1.4) hue-rotate(5deg) brightness(1.02); }
+        .card-info {
+            padding: 20px;
+            background: white;
+        }
+        .card-info h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .card-info p {
+            color: #666;
+            margin: 6px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Three Images: Nature Theme</h1>
+        
+        <div class="grid">
+            <div class="card">
+                <img class="filter1" src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400&h=267&fit=crop" alt="Ocean wave crashing on beach with blue sky" width="400" height="267" title="Ocean Wave - Powerful wave in turquoise blue water">
+                <div class="card-info">
+                    <h3>Ocean Wave</h3>
+                    <p>Ocean wave crashing on beach with blue sky</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="filter2" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=267&fit=crop" alt="Pristine forest with tall evergreen trees and sunlight filtering through" width="400" height="267" title="Forest Sunlight - Serene natural landscape with light rays">
+                <div class="card-info">
+                    <h3>Forest Sunlight</h3>
+                    <p>Pristine forest with tall evergreen trees and sunlight filtering through</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="filter3" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=267&fit=crop" alt="Snow-covered mountain peak under clear blue sky at sunrise" width="400" height="267" title="Mountain Peak - Majestic snow-covered peak during sunrise">
+                <div class="card-info">
+                    <h3>Mountain Peak</h3>
+                    <p>Snow-covered mountain peak under clear blue sky at sunrise</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

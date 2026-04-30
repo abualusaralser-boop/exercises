@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digi Fest</title>
+  <style>
+    body { font-family: Arial, sans-serif; font-weight: 400; margin: 0; padding: 0; background: #f3f4f6; color: #111; }
+    h1, h2, h3 { font-family: Tahoma; font-weight: 700; }
+    header { background: #17072b; color: #fff; padding: 24px; }
+    nav ul { display: flex; gap: 16px; list-style: none; margin: 0; padding: 0; }
+    nav a { color: #fff; text-decoration: none; }
+    main { max-width: 1024px; margin: 24px auto; padding: 0 16px; }
+    section { background: #fff; border-radius: 16px; padding: 24px; margin-bottom: 24px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    .hero { display: grid; gap: 18px; }
+    .grid-two { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 18px; }
+    .card { background: #eef2ff; border-radius: 14px; padding: 18px; }
+    aside.card { background: #172d67; color: #fff; }
+    footer { background: #8c15e9; color: #fff; padding: 24px; text-align: center; }
+    img { width: 200px; height: 200px; display: block; margin: 10px auto; object-fit: cover; border-radius: 12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Digi Fest</h1>
+      <p>Exercise 4: A page using correct HTML structure.</p>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#lineup">Line Up</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="welcome" class="hero">
+      <article>
+        <h2>Welcome to Digi Fest</h2>
+        <p>Digi Fest is a celebration of digital and technology in the city of Cardiff. This year, we are celebrating 'collaboration', so come and find out about the latest collaborations that are happening in this historic and innovative city. They promise an educational and inspirational packed programme for all.</p>
+      </article>
+      <aside class="card">
+        <h3>About the event</h3>
+        <p>A celebration of web technology and innovation in the city, featuring educational sessions and live demonstrations.</p>
+      </aside>
+    </section>
+
+    <section id="lineup">
+      <h2>Line Up</h2>
+      <div class="grid-two">
+        <article class="card">
+          <h3>Workshop Session</h3>
+          <p>An educational presentation on design and development.</p>
+          <img src="DigiFest.jpg" alt="Workshop Session Image">
+        </article>
+        <article class="card">
+          <h3>Project Showcase</h3>
+          <p>A showcase of collaborative creative projects from developers and artists.</p>
+          <img src="behance-showcase-and-inspiraton-web-design.avif" alt="Project Showcase Image">
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact Us</h2>
+      <p>If you want to learn more about the program, you can email us or follow us on social media.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Digi Fest. All rights reserved.</p>
+  </footer>
+</body>
+</html>

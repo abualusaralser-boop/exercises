@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embed a Local Video</title>
+  <style>
+    :root {
+      color: #eef2ff;
+      background: radial-gradient(circle at top, #4863ff 0%, #090c29 55%, #05070f 100%);
+      font-family: Inter, system-ui, sans-serif;
+      min-height: 100vh;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .page {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+    .panel {
+      width: min(96vw, 920px);
+      padding: 2rem;
+      border-radius: 24px;
+      background: rgba(6, 14, 40, 0.92);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 24px 80px rgba(0,0,0,0.22);
+    }
+    h1 { margin: 0 0 1rem; font-size: clamp(2rem, 4vw, 3rem); }
+    p { margin: 0 0 1.75rem; color: #cfd7ff; line-height: 1.75; }
+    .video-wrapper {
+      display: grid;
+      place-items: center;
+    }
+    video {
+      width: 100%;
+      max-width: 860px;
+      border-radius: 24px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+      background: #000;
+    }
+    .note {
+      margin-top: 1.25rem;
+      font-size: 0.95rem;
+      color: #9bb1ff;
+    }
+    code {
+      background: rgba(255,255,255,0.08);
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.35rem;
+      color: #f0f7ff;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="panel">
+      <h1>Embed a Local Video</h1>
+      <p>This is the mandatory Chapter 5 exercise solution. The embedded video now uses the local file named <code>WhatsApp Video 2026-04-27 at 5.49.35 PM.mp4</code>.</p>
+      <div class="video-wrapper">
+        <video controls loop poster="poster.svg">
+          <source src="WhatsApp Video 2026-04-27 at 5.49.35 PM.mp4" type="video/mp4">
+          Your browser does not support HTML5 video. Please add the local file <strong>WhatsApp Video 2026-04-27 at 5.49.35 PM.mp4</strong> to the same folder.
+        </video>
+      </div>
+      <p class="note">The video is set to loop and uses the poster image from <code>poster.svg</code>. If your browser still does not play it, open the page in a browser that supports local MP4 playback.</p>
+    </section>
+  </main>
+</body>
+</html>
+
