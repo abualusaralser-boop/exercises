@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Digi Fest 2022</title>
+  <style>
+    /* CSS Reset & Defaults */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Arial", sans-serif;
+      font-weight: 400;
+      background-color: #FFFFFF;
+      color: #000000;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Tahoma", sans-serif;
+      font-weight: 700;
+    }
+
+    /* Header & Nav */
+    header {
+      background-color: #17072b;
+      color: #FFFFFF;
+      padding: 40px 0 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      display: inline-block;
+      text-decoration: underline;
+      text-decoration-thickness: 4px;
+      text-underline-offset: 8px;
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 1.4em;
+    }
+
+    /* Main Layout */
+    main {
+      display: flex;
+      width: 100%;
+    }
+
+    .content-area {
+      flex: 65%;
+      padding: 40px 60px;
+    }
+
+    .sidebar {
+      flex: 35%;
+      background-color: #172d67;
+      color: #FFFFFF;
+      padding: 40px 60px;
+    }
+
+    /* Welcome Section */
+    .welcome-section h2 {
+      font-size: 2.2em;
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 5px;
+      margin-bottom: 25px;
+    }
+
+    .welcome-section p {
+      line-height: 1.5;
+      margin-bottom: 30px;
+      font-size: 1.2em;
+    }
+
+    .welcome-section img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    /* Sidebar Line Up Section */
+    .sidebar h2 {
+      font-size: 2.2em;
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 5px;
+      margin-bottom: 25px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      margin-bottom: 40px;
+    }
+
+    .sidebar li {
+      margin-bottom: 15px;
+      font-size: 1.2em;
+    }
+
+    .sidebar-images {
+      display: flex;
+      gap: 15px;
+    }
+
+    .sidebar-images img {
+      width: calc(50% - 7.5px);
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #8c15e9;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 15px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>DIGI FEST 2022</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">What's On</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Tickets</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content-area">
+      <section class="welcome-section">
+        <article>
+          <h2>Welcome</h2>
+          <p>Digi Fest is a celebration of digital and technology in the city of Cardiff. This year, we are celebrating
+            ‘collaboration’, so come and find out about the latest collaborations that are happening in this historic
+            and innovative city. They promise an educational and inspirational packed programme for all.</p>
+          <img src="لقطة شاشة_17-5-2026_225032_github.com.jpeg" alt="Code showing a link and package">
+        </article>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <section>
+        <h2>Line Up</h2>
+        <ul>
+          <li>- Introduction to HTML and CSS</li>
+          <li>- Links and images</li>
+          <li>- Page Layout</li>
+        </ul>
+        <div class="sidebar-images">
+          <img src="لقطة شاشة_17-5-2026_225253_github.com.jpeg" alt="Hardware component">
+          <img src="لقطة شاشة_17-5-2026_225314_github.com (1).jpeg" alt="Circuit board">
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2022 DigiFest Ltd.</p>
+  </footer>
+</body>
+
+</html>
